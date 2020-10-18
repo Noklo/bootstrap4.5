@@ -13,6 +13,7 @@ $carousel-item-height: 300px;
 
 .row-header{
     @include zero-margin(0px,0px);
+    background: $background-dark;
 }
 
 .row-content {
@@ -22,7 +23,7 @@ $carousel-item-height: 300px;
 }
 
 .footer{
-    background-color: $background-pale;
+    background-color: $background-dark;
     @include zero-margin(20px, 0px);
 }
 
@@ -73,4 +74,18 @@ body{
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+.modal {
+    .modal-body {
+        background-color: $background-pale;
+    }
+    
+    .modal-header {
+        color: floralwhite;
+        background:$background-dark;
+
+        .close {
+            color: floralwhite;
+        }
+    }
 }
